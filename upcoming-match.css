@@ -1,0 +1,55 @@
+.matches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+}
+
+.match {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 1rem;
+  padding: 3rem 5rem;
+}
+
+.flags {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.6rem;
+  color: #161616;
+  font-weight: 700;
+  align-items: center;
+}
+
+.match-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.team-name {
+  font-size: 2rem;
+  color: #161616;
+  font-weight: 600;
+}
+
+.schedule {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+
+@media only screen and (max-width: 670px) {
+  .matches {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 671px) and (max-width: 980px) {
+  .matches {
+    grid-template-columns: 1fr 1fr;
+  }
+}
